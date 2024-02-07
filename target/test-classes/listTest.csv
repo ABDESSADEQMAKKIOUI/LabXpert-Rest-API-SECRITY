@@ -1,0 +1,45 @@
+Name,Min,Max,Unit
+Acide urique,2.0,6.0,mg/dL
+Albumin�mie (M�thode immunologique),3.5,5.5,g/dL
+Ammoni�mie,15,45,�mol/L
+Bilirubine (Totale Directe et Indirecte),0.2,1.0,mg/dL
+Calcium,8.5,10.5,mg/dL
+Chlore,98,106,mmol/L
+Chlore Cholest�rol total,,200,mg/dL
+Cholest�rol est�rifi�,,150,mg/dL
+Cholest�rol H D L,,40,mg/dL
+Cholest�rol L D L,,130,mg/dL
+Cholest�rol HDL+ L D L,,45,mg/dL
+Cr�atinine,0.6,1.2,mg/dL
+Electrophor�se de l'h�moglobine,,,--
+Electrophor�se des lipides,,,--
+Electrophor�se des protides,,,--
+Fer s�rique,70,150,�g/dL
+Fer s�rique+C T F,250,450,�g/dL
+Fructosamine,,,--
+Glyc�mie,70,100,mg/dL
+H�moglobine glycosyl�e,4.0,6.0,%
+Ionogramme complet( Na, K, Cl, Prot, RA, Ca),,,,--
+Lipides,,,--
+Lipoprot�ine A,,30,mg/dL
+Lipoprot�ine B,,100,mg/dL
+Lipoprot�ine A+B,,130,mg/dL
+Lithium,0.6,1.2,mmol/L
+Magn�sium plasmatique,1.7,2.2,mg/dL
+Magn�sium erythrocytaire,1.5,2.5,mEq/L
+Oxalates,,,--
+Phosphore min�ral,2.5,4.5,mg/dL
+Prot�ines,6.4,8.3,g/dL
+Potassium,3.5,5.0,mmol/L
+R�serve alcaline,,,--
+Sodium,135,145,mmol/L
+Triglyc�rides,,150,mg/dL
+Ur�e,10,20,mg/dL
+Aldolase,,,--
+Amylase,,,--
+CPK,,,--
+CPK(MB),,,--
+G6PDH,,,--
+Gamma glutamyl transf�rase ( GGT),,,--
+LDH,,,--
+...
