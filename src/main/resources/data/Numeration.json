@@ -1,0 +1,107 @@
+{
+  "analyses": [
+    {
+      "nom": "Hémoglobine",
+      "valeursNormales": {
+        "homme": {"min": 13.8, "max": 17.2, "unité": "g/dL"},
+        "femme": {"min": 12.1, "max": 15.1, "unité": "g/dL"}
+      }
+    },
+    {
+      "nom": "Glycémie à jeun",
+      "valeursNormales": {"min": 70, "max": 100, "unité": "mg/dL"}
+    },
+    {
+      "nom": "Cholestérol total",
+      "valeursNormales": {"max": 200, "unité": "mg/dL"}
+    },
+    {
+      "nom": "Compte de globules blancs",
+      "valeursNormales": {"min": 4000, "max": 11000, "unité": "cellules/mm³"}
+    },
+    {
+      "nom": "Compte de plaquettes",
+      "valeursNormales": {"min": 150000, "max": 450000, "unité": "plaquettes/mm³"}
+    },
+    {
+      "nom": "Créatinine",
+      "valeursNormales": {"min": 0.6, "max": 1.2, "unité": "mg/dL"}
+    },
+    {
+      "nom": "AST (Aspartate Aminotransférase)",
+      "valeursNormales": {"max": 40, "unité": "U/L"}
+    },
+    {
+      "nom": "ALT (Alanine Aminotransférase)",
+      "valeursNormales": {"max": 35, "unité": "U/L"}
+    },
+    {
+      "nom": "Bilirubine totale",
+      "valeursNormales": {"max": 1.2, "unité": "mg/dL"}
+    },
+    {
+      "nom": "Calcium",
+      "valeursNormales": {"min": 8.6, "max": 10.3, "unité": "mg/dL"}
+    },
+    {
+      "nom": "Ferritine",
+      "valeursNormales": {"homme": {"min": 24, "max": 336, "unité": "ng/mL"}, "femme": {"min": 11, "max": 307, "unité": "ng/mL"}}
+    },
+    {
+      "nom": "TSH (Thyroid Stimulating Hormone)",
+      "valeursNormales": {"min": 0.4, "max": 4.0, "unité": "mIU/L"}
+    },
+    {
+      "nom": "Vitamine D",
+      "valeursNormales": {"min": 30, "max": 100, "unité": "ng/mL"}
+    },
+    {
+      "nom": "PSA (Antigène Prostatique Spécifique)",
+      "valeursNormales": {"max": 4, "unité": "ng/mL"}
+    },
+    {
+      "nom": "Troponine",
+      "valeursNormales": {"max": 0.04, "unité": "ng/mL"}
+    },
+    {
+      "nom": "Acide urique",
+      "valeursNormales": {"homme": {"min": 3.4, "max": 7.0, "unité": "mg/dL"}, "femme": {"min": 2.4, "max": 6.0, "unité": "mg/dL"}}
+    },
+    {
+      "nom": "Fibrinogène",
+      "valeursNormales": {"min": 200, "max": 400, "unité": "mg/dL"}
+    },
+    {
+      "nom": "HbA1c (Hémoglobine glyquée)",
+      "valeursNormales": {"min": 4.0, "max": 5.6, "unité": "%"}
+    },
+    {
+      "nom": "Fonction rénale (Clairance de la créatinine)",
+      "valeursNormales": {"min": 90, "max": 120, "unité": "mL/min/1.73m²"}
+    },
+    {
+      "nom": "Amylase",
+      "valeursNormales": {"min": 30, "max": 110, "unité": "U/L"}
+    },
+    {
+      "nom": "Lipase",
+      "valeursNormales": {"min": 10, "max": 140, "unité": "U/L"}
+    },
+    {
+      "nom": "Folates sériques",
+      "valeursNormales": {"min": 3, "max": 20, "unité": "ng/mL"}
+    },
+    {
+      "nom": "Fer sérique",
+      "valeursNormales": {"homme": {"min": 65, "max": 175, "unité": "µg/dL"}, "femme": {"min": 50, "max": 150, "unité": "µg/dL"}}
+    },
+    {
+      "nom": "Prothrombine Time (Temps de Quick)",
+      "valeursNormales": {"min": 11, "max": 13, "unité": "seconds"}
+    },
+    {
+      "nom": "INR (International Normalized Ratio)",
+      "valeursNormales": {"min": 0.8, "max": 1.2, "unité": ""}
+    }
+  ]
+}
