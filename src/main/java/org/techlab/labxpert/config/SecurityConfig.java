@@ -10,8 +10,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.techlab.labxpert.Enum.RoleUser;
 import org.techlab.labxpert.security.JWTAuthenticationFilter;
+import org.techlab.labxpert.security.JWTAuthorizationFilter;
 import org.techlab.labxpert.security.JWTHelper;
 
 import static org.springframework.http.HttpMethod.*;
@@ -50,7 +52,7 @@ public class SecurityConfig {
                 .antMatchers(DELETE,"/api/v1/echantillon").hasRole(RoleUser.Preleveur.name())
                 .anyRequest().authenticated();
         http.addFilter(new JWTAuthenticationFilter(authenticationManager(http.getSharedObject(AuthenticationConfiguration.class)), jwtHelper));
-//        http.addFilterBefore(new JWTAuthorizationFilter(jwtHelper), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(new JWTAuthorizationFilter(jwtHelper), UsernamePasswordAuthenticationFilter.class);
 
         return http.formLogin(Customizer.withDefaults()).build();
     }
