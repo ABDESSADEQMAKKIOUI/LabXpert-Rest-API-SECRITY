@@ -53,7 +53,7 @@ public class SecurityConfig {
                 .anyRequest().authenticated();
         http.addFilter(new JWTAuthenticationFilter(authenticationManager(http.getSharedObject(AuthenticationConfiguration.class)), jwtHelper));
         http.addFilterBefore(new JWTAuthorizationFilter(jwtHelper), UsernamePasswordAuthenticationFilter.class);
-
+        http.oauth2Login(Customizer.withDefaults());
         return http.formLogin(Customizer.withDefaults()).build();
     }
 

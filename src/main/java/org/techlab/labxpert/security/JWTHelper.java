@@ -9,41 +9,41 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static javax.crypto.Cipher.SECRET_KEY;
 import static org.techlab.labxpert.security.JWTUtil.*;
 
 @Component
 public class JWTHelper {
+    Algorithm algorithm = Algorithm.HMAC256(String.valueOf(SECRET_KEY));
 
-    Algorithm algorithm = Algorithm.HMAC256(SECRET);
-
-    public String generateAccessToken(String email, List<String> roles) {
+    public String generateAccessToken(String email, List<String> roles){
         return JWT.create()
                 .withSubject(email)
-                .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRE_ACCESS_TOKEN))
+                .withExpiresAt(new Date(System.currentTimeMillis()+EXPIRE_ACCESS_TOKEN))
                 .withIssuer(ISSUER)
-                .withClaim("roles", roles)
+                .withClaim("roles",roles)
                 .sign(algorithm);
     }
 
-    public String generateRefreshToken(String email) {
-        return JWT.create()
-                .withSubject(email)
-                .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRE_REFRESH_TOKEN))
+    public String generateRefreshToken(String email){
+        return  JWT.create().withSubject(email)
+                .withExpiresAt(new Date(System.currentTimeMillis()+EXPIRE_REFRESH_TOKEN))
                 .withIssuer(ISSUER)
                 .sign(algorithm);
+
     }
 
-    public String extractTokenFromHeaderIfExists(String authorizationHeader) {
-        if (authorizationHeader != null && authorizationHeader.startsWith(BEARER_PREFIX)) {
+    public String extractTokenFromHeaderIfExists(String authorizationHeader){
+        if (authorizationHeader != null && authorizationHeader.startsWith(BEARER_PREFIX)){
             return authorizationHeader.substring(BEARER_PREFIX.length());
         }
         return null;
     }
 
-    public Map<String, String> getTokensMap(String jwtAccessToken, String jwtRefreshToken) {
-        Map<String, String> idTokens = new HashMap<>();
-        idTokens.put("accessToken", jwtAccessToken);
-        idTokens.put("refreshToken", jwtRefreshToken);
-        return idTokens;
+    public Map<String,String> getTokentsMap(String jwtAccessToken , String jwtRefreshToken) {
+        Map<String,String> idToken = new HashMap<>();
+        idToken.put("accessToken" ,jwtAccessToken);
+        idToken.put("refreshToken" ,jwtRefreshToken);
+        return idToken;
     }
 }
